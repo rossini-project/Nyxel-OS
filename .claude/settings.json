@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Nyxel OS ativo. Se a memória do negócio (_memoria/empresa.md) já estiver preenchida, comece esta sessão rodando a skill /painel para dar ao usuário o resumo do dia antes de qualquer outra coisa. Se a memória ainda estiver com placeholders, sugira rodar /instalar.'"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git init:*)",
+      "WebSearch"
+    ]
+  }
+}
